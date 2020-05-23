@@ -7,6 +7,14 @@ module.exports = {
   organizationName: 'oze4', // Usually your GitHub org/user name.
   projectName: 'material-table-core-website', // Usually your repo name.
   themeConfig: {
+    defaultDarkMode: true,
+    announcementBar: {
+      id: 'support_us', // Any value that will identify this message.
+      content:
+        '🚧 Under construction 🚧 <br /><a target="_blank" rel="noopener noreferrer" href="https://github.com/oze4/material-table-core-website">Please visit here if you would like to contribute!</a>',
+      backgroundColor: '#e8eaf5', // Defaults to `#fff`.
+      textColor: '#091E42', // Defaults to `#000`.
+    },
     navbar: {
       title: '@material-table/core',
       logo: {
@@ -15,10 +23,14 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/getting-started/installation',
+          to: 'docs/getting-started/about',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
+          items: [
+            { to: 'docs/getting-started/about', label: '@material-table/core@v2.0.x' },
+            { to: 'https://material-table.com', label: 'material-table' }
+          ],
         },
         // {
         //   to: 'blog', 
@@ -93,14 +105,14 @@ module.exports = {
           homePageId: 'docs/getting-started/installation',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/oze4/material-table-core-website/edit/master/website/',
+            'https://github.com/oze4/material-table-core-website/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/oze4/material-table-core-website/edit/master/website/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/oze4/material-table-core-website/edit/master/website/blog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

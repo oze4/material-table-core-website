@@ -1,16 +1,18 @@
 ---
-id: installation
+id: install
 title: Installation
 ---
 
-### yarn
+#### yarn
 
 ```javascript
 yarn add @material-table/core
 ```
 
-### npm
+#### npm
 
 ```javascript
 npm install @material-table/core
 ```
+
+
