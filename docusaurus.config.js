@@ -9,7 +9,7 @@ module.exports = {
   themeConfig: {
     defaultDarkMode: true,
     announcementBar: {
-      id: 'support_us', // Any value that will identify this message.
+      id: 'announcement_bar', // Any value that will identify this message.
       content:
         '🚧 Under construction 🚧 <br /><a target="_blank" rel="noopener noreferrer" href="https://github.com/oze4/material-table-core-website">Please visit here if you would like to contribute!</a>',
       backgroundColor: ' #fff6ce', // '#e8eaf5', // Defaults to `#fff`.
@@ -124,10 +124,7 @@ module.exports = {
         //     'https://github.com/oze4/material-table-core-website/edit/master/website/blog/',
         // },
         theme: {
-          customCss: [
-            require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/material-icons.css')
-          ]
+          customCss: require.resolve('./src/css/custom.css')
         },
       },
     ],
