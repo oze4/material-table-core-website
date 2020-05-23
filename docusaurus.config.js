@@ -12,7 +12,7 @@ module.exports = {
       id: 'support_us', // Any value that will identify this message.
       content:
         '🚧 Under construction 🚧 <br /><a target="_blank" rel="noopener noreferrer" href="https://github.com/oze4/material-table-core-website">Please visit here if you would like to contribute!</a>',
-      backgroundColor: '#e8eaf5', // Defaults to `#fff`.
+      backgroundColor: ' #fff6ce', // '#e8eaf5', // Defaults to `#fff`.
       textColor: '#091E42', // Defaults to `#000`.
     },
     navbar: {
@@ -29,19 +29,29 @@ module.exports = {
           position: 'right',
           items: [
             { to: 'docs/getting-started/about', label: '@material-table/core@v2.0.x' },
-            { to: 'https://material-table.com', label: 'material-table' }
+            { href: 'https://material-table.com', label: 'material-table' }
           ],
         },
-        // {
-        //   to: 'blog', 
-        //   label: 'Blog', 
-        //   position: 'left'
-        // },
+        {
+          href: 'https://oze4.github.io/material-table-core/#/demo',
+          title: 'EXAMPLES',
+          position: 'right',
+          className: 'material-icons code tooltip examples',
+          'aria-label': 'Demo',
+        },
+        {
+          href: 'https://oze4.github.io/material-table-core/#/issue-tracker',
+          title: 'ISSUE TRACKER',
+          position: 'right',
+          className: 'material-icons bug-report tooltip issue-tracker',
+          'aria-label': 'Issue Tracker',
+        },
         {
           href: 'https://github.com/oze4/material-table-core',
-          label: 'GitHub',
           position: 'right',
-        },
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        }
       ],
     },
     /*
@@ -114,7 +124,10 @@ module.exports = {
         //     'https://github.com/oze4/material-table-core-website/edit/master/website/blog/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/material-icons.css')
+          ]
         },
       },
     ],

@@ -54,6 +54,18 @@ function Feature({imageUrl, title, description}) {
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+
+  // Hack to get certain background color only on home page
+  React.useEffect(() => {
+    let html = document.querySelector('html.homepage-background-styles');
+    if (!html) {
+      html = document.querySelector('html');
+      html.classList.add('homepage-background-styles');
+    }
+
+    return () => html.classList.remove('homepage-background-styles');
+  });
+
   return (
     <Layout
       // title={`${siteConfig.title}`}
@@ -97,7 +109,7 @@ function Home() {
       </header>
       <main>
         {features && features.length > 0 && (
-          <section className={styles.features}>
+          <section className={`${styles.features} home-page-feature`}>
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
