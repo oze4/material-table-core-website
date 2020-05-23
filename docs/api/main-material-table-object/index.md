@@ -1,4 +1,0 @@
----
-id: detailed
-title: Details
----

@@ -7,7 +7,7 @@ module.exports = {
   organizationName: 'oze4', // Usually your GitHub org/user name.
   projectName: 'material-table-core-website', // Usually your repo name.
   themeConfig: {
-    defaultDarkMode: true,
+    // defaultDarkMode: true,
     announcementBar: {
       id: 'announcement_bar', // Any value that will identify this message.
       content:
