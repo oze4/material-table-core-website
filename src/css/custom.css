@@ -127,3 +127,7 @@
 .code:after {
   content: "code";
 }
+
+table tr:nth-child(2n) {
+  all: unset;
+}

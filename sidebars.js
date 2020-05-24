@@ -5,7 +5,7 @@ module.exports = {
       'getting-started/install',
       'getting-started/compatible',
     ],
-    Highlights: [
+    Features: [
       "highlights/highlight_actions",
       "highlights/highlight_component_overriding",
       "highlights/highlight_custom_column_rendering",
@@ -23,8 +23,9 @@ module.exports = {
       "highlights/highlight_tree_data",
     ],
     API: [
+      // "api/material_table",
       {
-        Props: [
+        "Props": [
           'api/props/mt_prop_actions',
           'api/props/mt_prop_columns',
           'api/props/mt_prop_components',
